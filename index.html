@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN-API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <div class="input-group">
+                <label for="idInstance">idInstance</label>
+                <input type="text" id="idInstance">
+            </div>
+
+            <div class="input-group">
+                <label for="apiTokenInstance">ApiTokenInstance</label>
+                <input type="text" id="apiTokenInstance">
+            </div>
+
+            <button onclick="getSettings()">SetSettings</button>
+            <button onclick="getStateInstance()">SetStateInstance</button>
+
+            <div class="input-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" id="phoneNumber">
+            </div>
+
+            <div class="input-group">
+                <label for="messageText">Message Text</label>
+                <input type="text" id="messageText">
+            </div>
+
+            <button onclick="sendMessage()">SendMessage</button>
+
+            <div class="input-group">
+                <label for="fileUrl">File URL</label>
+                <input type="text" id="fileUrl">
+            </div>
+
+            <div class="input-group">
+                <label for="fileName">File Name</label>
+                <input type="text" id="fileName">
+            </div>
+
+            <button onclick="sendFileByUrl()">SendFileByUrl</button>
+        </div>
+
+        <div class="response-section">
+            <h2>Ответ:</h2>
+            <textarea id="responseField" readonly></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
